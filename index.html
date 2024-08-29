@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Verification</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <style>
+        /* Hide scrollbars and center the captcha */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff; /* Optional: set background color */
+        }
+        .cf-turnstile {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITEKEY"></div>
+</body>
+</html>
